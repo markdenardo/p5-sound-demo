@@ -5,15 +5,18 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import P5Wrapper from 'react-p5-wrapper';
 import sketch from './sketch'
+import Text from './text'
+import SplitPane from 'react-split-pane';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <P5Wrapper sketch={sketch} />
-    <P5Wrapper sketch={sketch} />
-    <P5Wrapper sketch={sketch} />
-    
+    <SplitPane split="vertical" minSize={50} defaultSize={100}>
+      <P5Wrapper sketch={sketch} />
+      <Text />
+    </SplitPane>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );

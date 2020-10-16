@@ -1,7 +1,5 @@
 import p5 from '../node_modules/p5';
 
-
-
 function sketch(p) {
     let rotation = 0;
 
@@ -17,9 +15,7 @@ function sketch(p) {
         }
         p.ellipse(p.mouseX, p.mouseY, 80, 80);
     };
-
-
-
 };
+
 
 export default sketch;
